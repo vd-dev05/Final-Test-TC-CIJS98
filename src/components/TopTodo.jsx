@@ -19,7 +19,7 @@ const Top = (isOpen) => {
                 >
                     <div className="w-full h-full">
                         <div 
-                        className={`translate-y-[4px] border-b-[5px] w-[110px] text-center ${isOpen.isOpen == 'all' ? 'border-blue-500':""  }`}  >
+                        className={`translate-y-[4px]  w-[110px] text-center ${isOpen.isOpen == 'all' ? 'border-blue-500 border-b-[5px] translate-y-[4px]':""  }`}  >
                             <h2 className="text-sm">
                                 All 
                             </h2>
@@ -30,7 +30,7 @@ const Top = (isOpen) => {
                 onClick={() => handleOpen('active')}
                 >
                     <div
-                  className={`translate-y-[4px] border-b-[5px] w-[110px] text-center ${isOpen.isOpen  == 'active' ? 'border-blue-500':''  }`}  >
+                  className={` translate-y-[4px]  w-[110px] text-center ${isOpen.isOpen  == 'active' ? 'border-blue-500 border-b-[5px] translate-y-[4px] ':''  }`}  >
                         <div>
                             <h2  className="text-sm">
                                 Active
@@ -43,7 +43,7 @@ const Top = (isOpen) => {
                 >
                     <div className="border-b-2  w-full text-sm ">
                         <div
-                    className={`translate-y-[4px] border-b-[5px] w-[110px] text-center ${isOpen.isOpen == 'compeleted' ? 'border-blue-500':''  }`}  >
+                    className={`translate-y-[4px] border-b-[5px] w-[110px] text-center ${isOpen.isOpen == 'compeleted' ? 'border-blue-500 border-b-[5px] translate-y-[4px] ':''  }`}  >
                             <h2>
                                 Completed
                             </h2>
